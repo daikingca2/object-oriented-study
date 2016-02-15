@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+body {
+  background-color: F0EFEB;
+  font-family: 'Noto Sans Japanese', serif;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+.base {
+  background-color: #8F771F;
+  height: 600px;
+  width: auto;
+  border-radius: 50px;
+}
+
+.coin_input {
+  text-align: center;
+}
+
+#info1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.recove {
+  text-align: center;
+}
+
+#coinList {
+  text-align: center;
+
+}
+
+.jyuen {
+  display: inline-block;
+  border: 4px solid #DDD;
+  text-align: center;
+  height: 96px;
+  width: 96px;
+  padding: auto;
+  margin: 10px;
+  border-radius: 50px;
+  background-color: #C47222;
+}
+
+.jyuen a {
+  display: block;
+  margin: 25px auto auto;
+  font-size: 30px;
+  font-weight: 70;
+}
+
+.gojyuen {
+  display: inline-block;
+  border: 4px solid #DDD;
+  text-align: center;
+  height: 96px;
+  width: 96px;
+  padding: 20px auto auto;
+  margin: 10px;
+  border-radius: 50px;
+  background-color: #C0C0C0;
+}
+
+.gojyuen a {
+  display: block;
+  margin: 25px auto auto;
+  font-size: 30px;
+  font-weight: 70;
+}
+
+.hyakuen {
+  display: inline-block;
+  border: 4px solid #DDD;
+  text-align: center;
+  height: 96px;
+  width: 96px;
+  padding: auto;
+  margin: 10px;
+  border-radius: 50px;
+  background-color: #C0C0C0;
+}
+
+.hyakuen a {
+  display: block;
+  margin: 25px auto auto;
+  font-size: 30px;
+  font-weight: 70;
+}
+
+.gohyakuen {
+  display: inline-block;
+  border: 4px solid #DDD;
+  text-align: center;
+  height: 96px;
+  width: 96px;
+  padding: auto;
+  margin: 10px;
+  border-radius: 50px;
+  background-color: #FFD700;
+}
+
+.gohyakuen a {
+  display: block;
+  margin: 25px auto auto;
+  font-size: 30px;
+  font-weight: 70;
+}
