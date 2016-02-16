@@ -8,24 +8,31 @@
     <meta charset="utf-8">
     <title>php</title>
     <link rel="stylesheet" href="style.css" charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    <script type="text/javascript">
+    $(function() {
+      $(".jyuen").draggable();
+    });
+
+    </script>
   </head>
   <body>
 
+    <!-- 鳥居start -->
+    <div id="top"></div>
+    <div id="subtop"><h1>アロバ神社</h1></div>
+    <div id="migihasira"></div>
+    <div id="hidarihasira"></div>
+    <!-- 鳥居end -->
     <div class="base">
-      <form class="coin_input" action="index.php" method="post">
-        <p id="info1">金額を入力して下さい。</p>
-        <input type="text" name="coin">
-        <input type="submit" value="投げる">
-      </form>
-      <div class="recove">
-        <button type="button" name="button">回収</button>
-      </div>
+        <div class="saisenbako"><p>賽銭箱</p></div>
       <div id="coinList">
         <p class="jyuen"><a href="#">10円</a></p>
         <p class="gojyuen"><a href="#">50円</a></p>
         <p class="hyakuen"><a href="#">100円</a></p>
         <p class="gohyakuen"><a href="#">500円</a></p>
-      </p>
+      </div>
     </div>
   </body>
 </html>

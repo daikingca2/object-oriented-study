@@ -1,9 +1,12 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 body {
-  background-color: F0EFEB;
+  background-color: #F0EFEB;
   font-family: 'Noto Sans Japanese', serif;
   font-weight: 500;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 a {
@@ -18,29 +21,71 @@ a:visited {
   color: black;
 }
 
-.base {
-  background-color: #8F771F;
-  height: 600px;
-  width: auto;
-  border-radius: 50px;
+#top {
+  background-color: #C43F1D;
+  text-align: center;
+  height: 80px;
+  width: 100%;
+  border-top: 10px solid black;
 }
 
-.coin_input {
-  text-align: center;
-}
 
-#info1 {
+#subtop {
+  background-color: #C43F1D;
   text-align: center;
+  height: 60px;
+  width: 100%;
   margin-top: 20px;
 }
 
-.recove {
+#subtop h1 {
+  margin: auto;
+  position: relative;
+  top: 8px;
+}
+
+#migihasira {
+  background-color: #C43F1D;
+  height: 100%;
+  width: 60px;
+  position: absolute;
+  top: 0px;
+  right: 100px;
+  border-top: 10px solid black;
+}
+
+#hidarihasira {
+  background-color: #C43F1D;
+  height: 100%;
+  width: 60px;
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  border-top: 10px solid black;
+}
+
+
+.saisenbako {
+  height: 200px;
+  width: 60%;
+  margin-top: 60px;
+  margin: auto;
+  background-color: #a5591b;
   text-align: center;
+  font-size: 60px;
+  font-weight: 800;
+  border-top: 20px solid #5b310f;
+  position: relative;
+  top: 50px;
 }
 
 #coinList {
+  position: relative;
+  top: 100px;
+  height: 400px;
+  margin: auto auto 20px auto;
+  padding: auto;
   text-align: center;
-
 }
 
 .jyuen {
