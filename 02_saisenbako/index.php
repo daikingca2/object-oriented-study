@@ -12,7 +12,7 @@
     <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
     <script type="text/javascript">
     $(function() {
-      $(".jyuen").draggable();
+      $(".jyuen, .gojyuen, .hyakuen, .gohyakuen").draggable();
     });
 
     </script>
