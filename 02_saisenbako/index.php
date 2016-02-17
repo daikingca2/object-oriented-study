@@ -13,6 +13,13 @@
     <script type="text/javascript">
     $(function() {
       $(".jyuen, .gojyuen, .hyakuen, .gohyakuen").draggable();
+      $(".saisenbako").droppable({
+        drop: function(event, ui) {
+          $(this)
+          .addClass("poke")
+          .html("poke!");
+        }
+      });
     });
 
     </script>
