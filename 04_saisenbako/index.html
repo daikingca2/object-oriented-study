@@ -8,21 +8,29 @@
     <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
     <script type="text/javascript">
     $(function() {
-      $(".jyuen, .gojyuen, .hyakuen, .gohyakuen").draggable();
+      $(".jyuen, .gojyuen, .hyakuen, .gohyakuen").draggable({
+        revert: "invalid",
+        scope: "ikeru",
+        helper: "clone"
+      });
 
       $(".saisenbako").droppable({
         accept: ".jyuen, .gojyuen, .hyakuen, .gohyakuen" ,
+        scope: "ikeru",
         drop: function(event, ui) {
           var dragId = ui.draggable.attr("id");
-          if($(this).find(".drop" + dragId).length == 0) {
-            $(this).append('<span class="drop' + dragId + '">' + ui.draggable.text() + '</span>');
+          // if($(this).find(".drop" + dragId).length == 0) {
+            $(this).append('<span class="drop' + dragId + '">' + "ちゃりん♪" + '</span>');
             $.post(
               'main.php',
               {
                 'coin': ui.draggable.text() // ひとまずcoinのtextを投げてphp側で判別
               }
             );
-          }
+            setTimeout(function(){
+              $(".drop" + dragId).fadeOut();
+            }, 1000);
+          // }
         } ,
         out: function (event, ui) {
           var dragId = ui.draggable.attr("id");
