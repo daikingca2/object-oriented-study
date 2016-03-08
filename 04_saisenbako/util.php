@@ -11,7 +11,7 @@ class util
   }
 
   public static function sessionClear(){
-    $bResult = flase;
+    $bResult = false;
     if( session_destroy() ){
       $bResult = ture;
     }
