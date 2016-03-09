@@ -1,0 +1,183 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+body {
+  background-color: #F0EFEB;
+  font-family: 'Noto Sans Japanese', serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/*a {
+  text-decoration: none;
+}*/
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+#top {
+  background-color: #C43F1D;
+  text-align: center;
+  height: 80px;
+  width: 100%;
+  border-top: 10px solid black;
+}
+
+
+#subtop {
+  background-color: #C43F1D;
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#subtop h1 {
+  margin: auto;
+  position: relative;
+  top: 8px;
+}
+
+#migihasira {
+  background-color: #C43F1D;
+  height: 100%;
+  width: 60px;
+  position: absolute;
+  top: 0px;
+  right: 100px;
+  border-top: 10px solid black;
+}
+
+#hidarihasira {
+  background-color: #C43F1D;
+  height: 100%;
+  width: 60px;
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  border-top: 10px solid black;
+}
+
+
+.saisenbako {
+  height: 200px;
+  width: 60%;
+  margin-top: 60px;
+  margin: auto;
+  background-color: #a5591b;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 800;
+  border-top: 20px solid #5b310f;
+  position: relative;
+  top: 50px;
+}
+
+#coinList {
+  position: relative;
+  top: 100px;
+  height: 250px;
+  margin: auto auto 20px auto;
+  padding: auto;
+  text-align: center;
+}
+
+#result {
+  position: relative;
+  top: 0px;
+  height: auto;
+  margin: auto auto 20px auto;
+  padding: auto;
+  text-align: center;
+}
+
+#result-view {
+    text-align: center;
+
+}
+
+.jyuen {
+  display: inline-block;
+  border: 4px solid #DDD;
+  text-align: center;
+  height: 96px;
+  width: 96px;
+  padding: auto;
+  margin: 10px;
+  border-radius: 50px;
+  background-color: #C47222;
+}
+
+.jyuen a {
+  display: block;
+  margin: 25px auto auto;
+  font-size: 30px;
+  font-weight: 70;
+}
+
+.gojyuen {
+  display: inline-block;
+  border: 4px solid #DDD;
+  text-align: center;
+  height: 96px;
+  width: 96px;
+  padding: 20px auto auto;
+  margin: 10px;
+  border-radius: 50px;
+  background-color: #C0C0C0;
+}
+
+.gojyuen a {
+  display: block;
+  margin: 25px auto auto;
+  font-size: 30px;
+  font-weight: 70;
+}
+
+.hyakuen {
+  display: inline-block;
+  border: 4px solid #DDD;
+  text-align: center;
+  height: 96px;
+  width: 96px;
+  padding: auto;
+  margin: 10px;
+  border-radius: 50px;
+  background-color: #C0C0C0;
+}
+
+.hyakuen a {
+  display: block;
+  margin: 25px auto auto;
+  font-size: 30px;
+  font-weight: 70;
+}
+
+.gohyakuen {
+  display: inline-block;
+  border: 4px solid #DDD;
+  text-align: center;
+  height: 96px;
+  width: 96px;
+  padding: auto;
+  margin: 10px;
+  border-radius: 50px;
+  background-color: #FFD700;
+}
+
+.gohyakuen a {
+  display: block;
+  margin: 25px auto auto;
+  font-size: 30px;
+  font-weight: 70;
+}
+
+.poke {
+  background-color: black;
+}
