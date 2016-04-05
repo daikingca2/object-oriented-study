@@ -91,6 +91,7 @@ function main()
 {
     // ファイル取得(inputから)
     if (is_uploaded_file($_FILES["csvfile"]["tmp_name"])) {
+        echo "hoge";
         $tmp = $_FILES["csvfile"]["tmp_name"];
         $file_name = $_FILES["csvfile"]["name"];
         $current_path = dirname(__FILE__) . "\\";
@@ -133,8 +134,6 @@ function main()
         <script src="dropzone.js"></script>
         <script type="text/javascript">
             var Dropzone = require("dropzone");
-            // jQuery
-            $("div#fallback").dropzone({ url: "./" });
         </script>
 	</head>
 	<body>
@@ -143,11 +142,9 @@ function main()
 		  <input type="file" name="csvfile" size="30" /><br />
 		  <input class="btn btn-primary" type="submit" value="アップロード" />
 		</form>
-        <form action="./" class="dropzone">
-          <div id="fallback">
-            <input name="file" type="file" multiple />
-          </div>
+        <!-- <form action="./" class="dropzone" method="post" enctype="multipart/form-data"> -->
         </form>
+
 		<hr>
 		<?php main(); ?>
 	</body>
