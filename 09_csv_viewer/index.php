@@ -128,7 +128,14 @@ function main()
         <meta charset="utf-8">
 		<title>008-009 Practice</title>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link href="dropzone.css" rel="stylesheet">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="dropzone.js"></script>
+        <script type="text/javascript">
+            var Dropzone = require("dropzone");
+            // jQuery
+            $("div#fallback").dropzone({ url: "./" });
+        </script>
 	</head>
 	<body>
 		<h2>CSVを入れてね</h2>
@@ -136,6 +143,11 @@ function main()
 		  <input type="file" name="csvfile" size="30" /><br />
 		  <input class="btn btn-primary" type="submit" value="アップロード" />
 		</form>
+        <form action="./" class="dropzone">
+          <div id="fallback">
+            <input name="file" type="file" multiple />
+          </div>
+        </form>
 		<hr>
 		<?php main(); ?>
 	</body>
